@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+body {
+    background-color: #F7E1D7; 
+    color: #4A5759; 
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header {
+    background-color: #EDAFB8; 
+    text-align: center;
+}
+header h1 {
+    color: #fff;
+    font-size: 34px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+nav ul {
+    list-style: none;
+}
+nav ul li {
+    display: inline-table;
+    margin: 0 12px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #4A5759;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover {
+    color: #B0C4B1; 
+}
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+    flex: 1;
+}
+ul {
+    margin: 15px 0 15px 20px;
+}
+ul li {
+    margin: 8px 0;
+}
+main h2{
+    text-align: center;
+}
+.algunosproyectosPadre{
+    display:flex; 
+    padding: 10px;
+    -ms-flex-flow: row wrap;
+    justify-content: center;
+}
+.caja1{
+    width: 80%;
+    background-color:#EDAFB8; 
+    border: 2px #fff; 
+    text-align: center;
+    line-height: 50px;
+    margin: 30px;
+    border-radius: 10px;
+}
+.contactoPadre{
+    display: flex;
+    flex-direction: row;
+  justify-content: space-between;
+}
+.habilidades{
+    text-align: center;
+}
+.masobremi{
+ display: flex;
+  justify-content: center;   
+  align-items: center;       
+  text-align: center;       
+  height: 250px;             
+  padding: 20px;
+}
+section h3{
+  font-size: 22px;         
+  font-weight: bold; 
+  text-align: center;       
+  line-height: 1.6;        
+  color:#4A5759;
+}
+.proyectosPadre{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(4,1fr);
+    width: 100%;
+    gap: 20px;
+}
+section p{
+    margin: 0 20px;
+}
+.caja3{
+    width: 100%;
+    background-color:#EDAFB8; 
+    border: solid 1px #fff; 
+    text-align: center;
+    margin: 3vh;
+    border-radius: 10px;
+}
+.caja4{
+    width: 50%;
+    background-color:transparent; 
+    border: solid 0.05vh #fff; 
+    text-align: center;
+    margin: 5vh;
+    border-radius: 0.05vhpx;
+}
+
+.conocemisproyectos{
+    text-align: center;
+}
+.caja5{
+    width: 100%;
+    background-color:#EDAFB8; 
+    border: solid 1px #fff; 
+    text-align: center;
+    margin: 30px;
+    border-radius: 10px;
+}
+footer {
+  background-color: #4A5759; 
+  color: #fff;
+  text-align: center;
+  padding: 2vh;
+  margin: 0%;
+  font-size: 2vh;     
+  width: 100%;
+}
+.mishab{
+    text-align: left;
+}
+.footerproyectos{
+ background-color: #4A5759;
+  color: #fff;
+  text-align: center;
+  padding: 16px 20px;
+  font-size: 14px;
+}
+@media (max-width:425px) {
+ header {
+      padding: 20px;
+      text-align: center;
+      width: 100%;
+    }
+    body { font-size: 15px; 
+        line-height: 1.5; 
+    }
+
+ .algunosproyectosPadre{
+     flex-direction: column;
+     align-items: center;
+    }
+ .contactoPadre{
+     flex-direction: column;
+     justify-content: space-between;
+     font-size: smaller;
+    }
+  .proyectosPadre {
+      display: grid;
+      grid-template-columns: 1fr;
+     width: 100%;
+     padding: 2vh 4%;
+     gap: 2vh;
+     align-items: start; 
+     justify-items: center;
+    }
+  .caja3{
+     width: 100%;
+     background-color:#EDAFB8; 
+     border: solid 1px #fff; 
+     text-align: center;
+     margin: 1vh;
+     border-radius: 10px;
+   }
+   .masobremi{
+     flex-direction: column;
+     align-items: center;       
+     text-align: center;        
+    }
+   .caja4{
+     width: 100%;
+     background-color:transparent; 
+     border: solid 0.05vh #fff; 
+     text-align: center;
+     margin: 1vh;
+     border-radius: 0.5vhpx;
+    }
+  section p{
+      margin: 1px;
+     text-align: center;
+    }
+  footer {
+     margin-top: auto ;
+     width: 100% ;
+   }
+   .edu{
+     flex-direction: column;
+     align-items: center;
+   }
+   .caja5{
+      width: 100%;
+     background-color:#EDAFB8; 
+     border: solid 1px #fff; 
+     text-align: center;
+     margin: 1vh 1vh;
+     border-radius: 10px;
+    }
+ img { 
+     max-width: 100%; 
+     height: auto; 
+     display: block; 
+    }
+
+}
+
