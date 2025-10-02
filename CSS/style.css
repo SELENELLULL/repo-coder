@@ -1,20 +1,20 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;        /* Evita que el padding y el borde afecten el ancho total */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 html, body {
-  height: 100%;
+  height: 100%;       /* Para que el body ocupe toda la altura de la ventana */
   margin: 0;
 }
-body {
+body {          /* Uso de Flexbox: organiza header, main y footer en columna */
     background-color: #F7E1D7; 
     color: #4A5759; 
     line-height: 1.6;
-    display: flex;
+    display: flex;    /* Uso de Flexbox: organiza header, main y footer en columna */
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100vh; /* Para que el footer siempre quede al fondo */
 }
 header {
     background-color: #EDAFB8; 
@@ -30,14 +30,14 @@ nav ul {
     list-style: none;
 }
 nav ul li {
-    display: inline-table;
+    display: inline-table;   /* Los links se muestran en línea */
     margin: 0 12px;
 }
 nav ul li a {
     text-decoration: none;
     color: #4A5759;
     font-weight: bold;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease; /* Animación al cambiar color */
 }
 nav ul li a:hover {
     color: #B0C4B1; 
@@ -46,7 +46,7 @@ main {
     max-width: 1000px;
     margin: 30px auto;
     padding: 0 20px;
-    flex: 1;
+    flex: 1;  /* Hace que main ocupe el espacio disponible en Flexbox */
 }
 ul {
     margin: 15px 0 15px 20px;
@@ -58,10 +58,10 @@ main h2{
     text-align: center;
 }
 .algunosproyectosPadre{
-    display:flex; 
+    display:flex;    /* Uso de Flexbox */
     padding: 10px;
     -ms-flex-flow: row wrap;
-    justify-content: center;
+    justify-content: center;  /* Centra las cajas horizontalmente */
 }
 .caja1{
     width: 80%;
@@ -125,6 +125,12 @@ section p{
 .conocemisproyectos{
     text-align: center;
 }
+.miedu{
+    display:flex; 
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+}
 .caja5{
     width: 100%;
     background-color:#EDAFB8; 
@@ -152,6 +158,7 @@ footer {
   padding: 16px 20px;
   font-size: 14px;
 }
+/* ===== Media Queries para móviles ===== */
 @media (max-width:425px) {
  header {
       padding: 20px;
@@ -167,6 +174,11 @@ footer {
      align-items: center;
     }
  .contactoPadre{
+     flex-direction: column;
+     justify-content: space-between;
+     font-size: smaller;
+    }
+    .miedu{
      flex-direction: column;
      justify-content: space-between;
      font-size: smaller;
