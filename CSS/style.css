@@ -60,7 +60,7 @@ main h2{
 .algunosproyectosPadre{
     display:flex;    /* Uso de Flexbox */
     padding: 10px;
-    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
     justify-content: center;  /* Centra las cajas horizontalmente */
 }
 .caja1{
