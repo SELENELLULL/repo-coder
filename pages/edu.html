@@ -1,66 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+ <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SELENE LLULL</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- Mi hoja de estilos -->
     <link rel="stylesheet" href="../CSS/style.css">
-</head>
-<body>
- <header>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+ </head>
+ <body>
+   <header>
      <h1>SELENE LLULL</h1>
      <!-- Menú principal -->
-     <nav>
-          <ul>
-             <li><a href="../index.html">Inicio</a></li>
-             <li><a href="./sobremi.html">Sobre mi</a></li>
-             <li><a href="./proyectos.html">Proyectos</a></li>
-             <li><a href="./edu.html">Educación</a></li>
-             <li><a href="./contacto.html">Contacto</a></li>
-          </ul>
+     <nav class="navbar navbar-expand-lg" >
+       <div class= "container-fluid">
+         <a class="navbar-brand" href="#"></a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNav">
+           <ul class="navbar-nav justify-content-center w-100">
+             <li class="nav-item">
+               <a class="nav-link " aria-current="page" href="../index.html">Inicio</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="./sobremi.html">Sobre mi</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="./proyectos.html">Proyectos</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link active" href="./edu.html">Educación</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="./contacto.html">Contacto</a>
+             </li>
+           </ul>
+         </div>
+       </div>
      </nav>
- </header>      
-  <main>
-    <!-- Intro de la sección -->
+   </header>      
+   <main>
+     <!-- Intro de la sección -->
      <section>
-         <h2>MI EDUCACIÓN</h2>
-         <p>La formación académica y los cursos que realicé son una parte esencial de mi crecimiento profesional. 
-         Aquí comparto mi recorrido y los conocimientos que he adquirido hasta el momento.</p>
-        </section> 
-        <!-- Contenedor con mis bloques de educación -->
+       <h2 class="subtitulo">MI EDUCACIÓN</h2>
+       <p class="texto">La formación académica y los cursos que realicé son una parte esencial de mi crecimiento profesional. 
+       Aquí comparto mi recorrido y los conocimientos que he adquirido hasta el momento.</p>
+      </section> 
+      <!-- Contenedor con mis bloques de educación -->
      <div class="miedu">
-        <section class="caja5">
-             <h3>🎓 Educación formal</h3>
-             <p><strong>Ingeniería en Sistemas</strong> – Universidad Tecnológica Nacional (UTN) (en curso).
-             <br>Conocimientos adquiridos: programación en Python, C, Pascal, algoritmos, estructuras de datos, arquitectura de computadoras y resolución de problemas lógicos.</p>
-         </section>
-         <section class="caja5">
-             <h3>💻 Cursos y certificaciones</h3>
-             <p><strong>Curso de Desarrollo Web</strong> – CoderHouse.<br>
-             Contenidos: <em>HTML</em>, <em>CSS</em>, fundamentos de diseño web y buenas prácticas en desarrollo front-end.</p>
-             <p><strong>Certificación Inglés B2 Cambridge</strong> – Nivel avanzado.<br>
-             Competencias: comprensión lectora, escritura, expresión oral y auditiva en contextos técnicos y profesionales.</p>
-         </section>
-         <section class="caja5">
-             <h3>🚀 Aprendizaje continuo</h3>
-             <p>Además de mi formación académica, me capacito de manera autodidacta con documentación oficial, proyectos personales y nuevas tecnologías.
-             Mi objetivo es combinar teoría y práctica para crecer como desarrolladora y aportar a proyectos innovadores.</p>
-     </section>
+       <section class="caja5">
+          <h3>🎓 Educación formal</h3>
+          <p><strong>Ingeniería en Sistemas</strong> – Universidad Tecnológica Nacional (UTN) (en curso).
+          <br>Conocimientos adquiridos: programación en Python, C, Pascal, algoritmos, estructuras de datos, arquitectura de computadoras y resolución de problemas lógicos.</p>
+       </section>
+       <section class="caja5">
+         <h3>💻 Cursos y certificaciones</h3>
+          <p><strong>Curso de Desarrollo Web</strong> – CoderHouse.<br>
+          Contenidos: <em>HTML</em>, <em>CSS</em>, fundamentos de diseño web y buenas prácticas en desarrollo front-end.</p>
+          <p><strong>Certificación Inglés B2 Cambridge</strong> – Nivel avanzado.<br>
+          Competencias: comprensión lectora, escritura, expresión oral y auditiva en contextos técnicos y profesionales.</p>
+       </section>
+       <section class="caja5">
+         <h3>🚀 Aprendizaje continuo</h3>
+          <p>Además de mi formación académica, me capacito de manera autodidacta con documentación oficial, proyectos personales y nuevas tecnologías.
+          Mi objetivo es combinar teoría y práctica para crecer como desarrolladora y aportar a proyectos innovadores.</p>
+       </section>
      </div>
      <!-- Datos de contacto al final -->
-     <section class="container">
-         <p><a href="mailto:llullselene@gmail.com" target="_blank">📧llullselene@gmail.com</a></p>
-         <p>INSTAGRAM: <a href="https://www.instagram.com/selellull?igsh=MTdic3YxdDFnZmJ1ZA%3D%3D&utm_source=qr" target="_blank">@selellull</a></p>
-         <p>📱3482-524017</p>
-         <p>💼 LinkedIn:<a href="https://www.linkedin.com/in/selene-llull-1815a729b/" target="_blank">/in/usuario</a></p>
-      </section>
-  </main>
-  <!-- Footer simple -->
-  <footer>
-      &copy;2025 Se reservan los datos de autor Selene Llull
-    </footer>
+   </main>
+   <!-- Footer -->
+   <footer class="text-center text-lg-start bg-dark text-white mt-5">
+     <div class="container p-4 pb-0">
+       <div class="row">
+         <!-- Columna 1 -->
+         <div class="col-md-4 mb-4">
+           <h5 class="text-uppercase fw-bold mb-3">Contacto</h5>
+           <p><i class="bi bi-envelope me-2"></i> llullselene@gmail.com</p>
+           <p><i class="bi bi-telephone me-2"></i> 3482-524017</p>
+          </div>
+         <!-- Columna 2 -->
+         <div class="col-md-4 mb-4 text-center">
+           <h5 class="text-uppercase fw-bold mb-3">Redes</h5>
+           <a href="https://instagram.com/selellull" class="text-white me-3 fs-4"><i class="bi bi-instagram"></i></a>
+           <a href="https://www.linkedin.com/in/selene-llull-1815a729b/" class="text-white fs-4"><i class="bi bi-linkedin"></i></a>
+         </div>
+         <!-- Columna 3 -->
+         <div class="col-md-4 mb-4 text-end">
+           <h5 class="text-uppercase fw-bold mb-3">© 2025</h5>
+           <p>Se reservan los datos de autor<br>Selene Llull</p>
+         </div>
+       </div>
+     </div>
+     <div class="text-center p-3 border-top border-secondary">
+       <small>Desarrollado con 💻 por Selene Llull</small>
+     </div>
+   </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-</body>
+ </body>
 </html>

@@ -1,143 +1,151 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;        /* Evita que el padding y el borde afecten el ancho total */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;        
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 html, body {
-  height: 100%;       /* Para que el body ocupe toda la altura de la ventana */
+  height: 100%;      
   margin: 0;
 }
-body {          /* Uso de Flexbox: organiza header, main y footer en columna */
-    background-color: #F7E1D7; 
-    color: #4A5759; 
-    line-height: 1.6;
-    display: flex;    /* Uso de Flexbox: organiza header, main y footer en columna */
-    flex-direction: column;
-    min-height: 100vh; /* Para que el footer siempre quede al fondo */
-}
 header {
-    background-color: #EDAFB8; 
-    text-align: center;
+  background-color: #EDAFB8; 
+  text-align: center;
+  padding: 10px 0; 
+  width: 100%;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center
 }
 header h1 {
-    color: #fff;
-    font-size: 34px;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
+  margin: 0;
+  padding: 0;
+}
+header h1 img {
+  width: 150px; 
+  height: auto;
+ display: block;
+  margin: 5px 0;
 }
 nav ul {
-    list-style: none;
+  list-style: none;
 }
 nav ul li {
-    display: inline-table;   /* Los links se muestran en línea */
-    margin: 0 12px;
-}
-nav ul li a {
-    text-decoration: none;
-    color: #4A5759;
-    font-weight: bold;
-    transition: color 0.3s ease; /* Animación al cambiar color */
-}
-nav ul li a:hover {
-    color: #B0C4B1; 
-}
-main {
-    max-width: 1000px;
-    margin: 30px auto;
-    padding: 0 20px;
-    flex: 1;  /* Hace que main ocupe el espacio disponible en Flexbox */
-}
-ul {
-    margin: 15px 0 15px 20px;
-}
-ul li {
-    margin: 8px 0;
-}
-main h2{
-    text-align: center;
-}
-.algunosproyectosPadre{
-    display:flex;    /* Uso de Flexbox */
-    padding: 10px;
-    flex-flow: row wrap;
-    justify-content: center;  /* Centra las cajas horizontalmente */
-}
-.caja1{
-    width: 80%;
-    background-color:#EDAFB8; 
-    border: 2px #fff; 
-    text-align: center;
-    line-height: 50px;
-    margin: 30px;
-    border-radius: 10px;
-}
-.contactoPadre{
-    display: flex;
-    flex-direction: row;
-  justify-content: space-between;
-}
-.habilidades{
-    text-align: center;
-}
-.masobremi{
- display: flex;
-  justify-content: center;   
-  align-items: center;       
-  text-align: center;       
-  height: 250px;             
-  padding: 20px;
-}
-section h3{
-  font-size: 22px;         
-  font-weight: bold; 
-  text-align: center;       
+  display: inline-table;   /* Los links se muestran en línea */
+  margin: 0 12px;
+  font-size: 18px;               
   line-height: 1.6;        
   color:#4A5759;
 }
-.proyectosPadre{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: repeat(4,1fr);
-    width: 100%;
-    gap: 20px;
+nav ul li a {
+  text-decoration: none;
+  color: #4A5759;
+  transition: color 0.3s ease; /* Animación al cambiar color */
+  font-weight: normal; /* 👈 hace la fuente más fina */
+  font-size: 18px;
 }
-section p{
-    margin: 0 20px;
+nav ul li a:hover {
+  color: #B0C4B1; 
 }
-.caja3{
-    width: 100%;
-    background-color:#EDAFB8; 
-    border: solid 1px #fff; 
-    text-align: center;
-    margin: 3vh;
-    border-radius: 10px;
+.navbar .nav-link {
+  font-weight: 400; /* todos finitos */
 }
-.caja4{
-    width: 50%;
-    background-color:transparent; 
-    border: solid 0.05vh #fff; 
-    text-align: center;
-    margin: 5vh;
-    border-radius: 0.05vhpx;
+.navbar .nav-link.active {
+  font-weight: 400; /* el activo un poquito más grueso pero no bold */
 }
-
-.conocemisproyectos{
-    text-align: center;
+main {
+ max-width: 1000px;
+ margin: 20px auto;
+ padding: 0 20px;
+ flex: 1;  
+}
+.banner {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+.texto{
+ text-align: center;
+  margin-bottom: 5px;
+  color: black;
+  padding: 0 20px;
+}
+ul {
+  margin: 15px 0 15px 20px;
+}
+ul li {
+  margin: 8px 0;
+  font-size: 18px;         
+  font-weight: bold;       
+  line-height: 1.6;        
+  color:#4A5759;
+}
+.subtitulo{
+  text-align: center;
+  font-size: 22px;         
+  font-weight: bold;       
+  line-height: 1.6;        
+  color:#4A5759;
 }
 .miedu{
-    display:flex; 
-    padding: 10px;
-    flex-direction: column;
-    justify-content: center;
+  display:flex; 
+  padding: 10px;
+  flex-direction: column;
+  justify-content: center;
 }
 .caja5{
-    width: 100%;
-    background-color:#EDAFB8; 
-    border: solid 1px #fff; 
-    text-align: center;
-    margin: 30px;
-    border-radius: 10px;
+  width: 100%;
+  background-color:#EDAFB8; 
+  border: solid 1px #fff; 
+  text-align: center;
+  margin: 30px;
+  border-radius: 10px;
+}
+.caja1{
+  width: 80%;
+  background-color:#EDAFB8; 
+  border: 2px #fff; 
+  text-align: center;
+  line-height: 50px;
+  margin: 30px;
+  border-radius: 10px;
+}
+
+.texto{
+ text-align: center;
+  margin-bottom: 5px;
+  color: black;
+  padding: 0 20px;
+}
+.proyectosPadre{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(4,1fr);
+  width: 100%;
+  gap: 20px;
+}
+.caja3 {
+  background-color: transparent; 
+  border-radius: 15px;
+  padding: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+.caja4{
+  width: 50%;
+  background-color:transparent; 
+  border: solid 0.05vh #fff; 
+  text-align: center;
+  margin: 5vh;
+  border-radius: 0.05vhpx;
 }
 footer {
   background-color: #4A5759; 
@@ -148,96 +156,150 @@ footer {
   font-size: 2vh;     
   width: 100%;
 }
-.mishab{
-    text-align: left;
-}
-.footerproyectos{
- background-color: #4A5759;
+.btn-custom {
+  background-color: #4A5759; 
+  border: none;
   color: #fff;
+}
+.btn-custom:hover {
+  background-color: #4A5759;
+}
+.card-custom{
+  background-color: #EDAFB8; /* color de fondo de la card */
+  width: 18rem
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-custom:hover {
+  background-color:  #fff; /* color al pasar el mouse */
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+.habilidades-oval {
+  padding: 50px 20px;
   text-align: center;
-  padding: 16px 20px;
-  font-size: 14px;
 }
-/* ===== Media Queries para móviles ===== */
-@media (max-width:425px) {
- header {
-      padding: 20px;
-      text-align: center;
-      width: 100%;
-    }
-    body { font-size: 15px; 
-        line-height: 1.5; 
-    }
-
- .algunosproyectosPadre{
-     flex-direction: column;
-     align-items: center;
-    }
- .contactoPadre{
-     flex-direction: column;
-     justify-content: space-between;
-     font-size: smaller;
-    }
-    .miedu{
-     flex-direction: column;
-     justify-content: space-between;
-     font-size: smaller;
-    }
-  .proyectosPadre {
-      display: grid;
-      grid-template-columns: 1fr;
-     width: 100%;
-     padding: 2vh 4%;
-     gap: 2vh;
-     align-items: start; 
-     justify-items: center;
-    }
-  .caja3{
-     width: 100%;
-     background-color:#EDAFB8; 
-     border: solid 1px #fff; 
-     text-align: center;
-     margin: 1vh;
-     border-radius: 10px;
-   }
-   .masobremi{
-     flex-direction: column;
-     align-items: center;       
-     text-align: center;        
-    }
-   .caja4{
-     width: 100%;
-     background-color:transparent; 
-     border: solid 0.05vh #fff; 
-     text-align: center;
-     margin: 1vh;
-     border-radius: 0.5vhpx;
-    }
-  section p{
-      margin: 1px;
-     text-align: center;
-    }
-  footer {
-     margin-top: auto ;
-     width: 100% ;
-   }
-   .edu{
-     flex-direction: column;
-     align-items: center;
-   }
-   .caja5{
-      width: 100%;
-     background-color:#EDAFB8; 
-     border: solid 1px #fff; 
-     text-align: center;
-     margin: 1vh 1vh;
-     border-radius: 10px;
-    }
- img { 
-     max-width: 100%; 
-     height: auto; 
-     display: block; 
-    }
-
+.habilidades-oval h3 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color:#4A5759 ;
 }
+.oval-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.oval-card {
+  background: #EDAFB8;
+  border-radius: 50px / 30px; /* ovalado */
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  min-width: 150px;
+}
+.icon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.oval-card:hover{
+  transform: scale(1.1);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+.oval-card p {
+  font-size: 0.9rem;
+  color: #555;
+  text-align: center;
+}
+body {
+  background-color: #fbe9e7;
+  font-family: 'Poppins', sans-serif;
+}
+.card {
+  background-color: #EDAFB8;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+.table{
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+.icono-proyecto {
+  font-size: 2.5rem;
+  color: #4A5759;
+}
+.card-custom .btn {
+  border-color: #4A5759;
+  color:#fff ;
+}
+/* ==== SECCIÓN DE CONTACTO ==== */
+.contacto-lista {
+  border: none;
+  padding: 0;
+}
+.contacto-lista li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 18px;
+  color: #4A5759;
+  font-weight: 500;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contacto-lista li:hover {
+  background-color: #EDAFB8;
+  transform: scale(1.02);
+  border-radius: 10px;
+}
+
+.icono-contacto {
+  font-size: 1.5rem;
+  color: #4A5759;
+  transition: color 0.3s ease;
+}
+
+.contacto-lista a {
+  color: #4A5759;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contacto-lista a:hover {
+  color: #B0C4B1;
+}
+
+.icono-contacto:hover {
+  color: #B0C4B1;
+}
+#contacto .form-control {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 10px 12px;
+  font-size: 16px;
+}
+#contacto .form-control:focus {
+  border-color: #4A5759;
+   box-shadow: 0 0 8px rgba(74, 87, 89, 0.3);
+}
+#contacto .card {
+  background-color: #EDAFB8;
+  border-radius: 15px;
+}
+#contacto .btn-custom {
+  background-color: #4A5759;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+
 

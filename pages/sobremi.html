@@ -1,63 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+ <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SELENE LLULL</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/style.css">
-</head>
-<body>
-    <!-- HEADER con título principal y menú de navegación -->
- <header>
-    <!-- Nombre en la parte superior -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+ </head>
+ <body>
+   <header>
+     <!-- Nombre en la parte superior -->
      <h1>SELENE LLULL</h1>
-      <!-- Barra de navegación con links a todas las secciones -->
-     <nav>
-          <ul>
-             <li><a href="../index.html">Inicio</a></li>
-             <li><a href="./sobremi.html">Sobre mi</a></li>
-             <li><a href="./proyectos.html">Proyectos</a></li>
-             <li><a href="./edu.html">Educación</a></li>
-             <li><a href="./contacto.html">Contacto</a></li>
-          </ul>
-      </nav>
- </header> 
-       <!-- MAIN: contenido principal de esta página -->
-    <main>
-       <h2>SOBRE MI</h2>
-        <section>
-            <p class="caja3">
-                “Hola, soy Selene 👩‍💻.  Soy Desarrolladora Web y estudiante de Ingeniería en Sistemas.
-                Me apasiona crear sitios web que potencien negocios, proyectos personales e ideas que merecen  ser vistas.Me gusta combinar la creatividad con la lógica para construir soluciones prácticas y atractivas.”
-            </p>
-        </section>
-        <!-- Sección de habilidades -->
-     <section>
-         <h3 class="mishab">🛠️ Mis habilidades</h3>
-          <ul>
-             <li>🖥️ Conocimientos de informática – manejo de entornos digitales.</li>
-             <li>🔤 Lenguajes de programación – HTML, CSS, C, Python y Pascal.</li>
-             <li>🎨 Diseño digital – wireframes, prototipado web y diseño gráfico.</li>
-             <li>💡 Creatividad y pensamiento crítico.</li>
-             <li>👥 Trabajo en equipo.</li>
-             <li>⏱️ Organización y gestión del tiempo.</li>
-             <li>🌍 Inglés avanzado  – comprensión y comunicación fluida en contextos técnicos y profesionales.</li>
-          </ul>
+     <!-- Barra de navegación con links a todas las secciones -->
+     <nav class="navbar navbar-expand-lg" >
+       <div class= "container-fluid">
+         <a class="navbar-brand" href="#"></a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNav">
+           <ul class="navbar-nav justify-content-center w-100">
+             <li class="nav-item">
+               <a class="nav-link " aria-current="page" href="../index.html">Inicio</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link active" href="./sobremi.html">Sobre mi</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="./proyectos.html">Proyectos</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="./edu.html">Educación</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="./contacto.html">Contacto</a>
+             </li>
+           </ul>
+         </div>
+       </div>
+     </nav>
+   </header> 
+   <!-- MAIN: contenido principal de esta página -->
+   <main class="container py-5">
+     <h2 class="subtitulo">SOBRE MÍ</h2>
+     <!-- Presentación -->
+     <section class="caja3">
+       <p>"Soy <strong>Selene</strong>, una apasionada por la tecnología que fusiona su rol de desarrolladora web con sus estudios en Ingeniería en Sistemas.
+         Mi motivación es transformar conceptos en experiencias web memorables.
+         Cada línea de código está orientada a crear plataformas que no solo funcionen a la perfección, sino que también impulsen negocios, capturen miradas y comuniquen valor de forma eficaz.
+         Me guía la búsqueda de soluciones innovadoras y orientadas a resultados."
+       </p>
      </section>
-     <section class="masobremi">
-         <h3>💫 LO QUE ME GUSTA 💫 </h3>
-         <p class="caja4">Me encanta aprender cosas nuevas, experimentar con el diseño, resolver problemas con código 
-          y aportar valor a proyectos que generen impacto positivo. 
-          También disfruto del deporte, la música y de todo lo que me ayude a mantener un equilibrio entre lo personal y lo profesional.</p>
-     </section>
-     <p class="conocemisproyectos"><a href="./proyectos.html">👉 Conocé mis proyectos</a></p>
-    </main>
-    <!-- Footer simple -->
-    <footer>
-      &copy;2025 Se reservan los datos de autor Selene Llull
-    </footer>
+     <!-- Habilidades -->
+  <section class="container my-5">
+  <h3 class="subtitulo">🛠️ Mis habilidades</h3>
+  <div class="table-responsive">
+    <table class="table table-bordered text-center align-middle shadow-sm rounded-4 overflow-hidden">
+      <thead class="table-light">
+        <tr class="tabla">
+          <th scope="col" class="fw-bold">Lenguajes de programación</th>
+          <th scope="col" class="fw-bold">Nivel</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>HTML</td>
+          <td>Avanzado</td>
+        </tr>
+        <tr>
+          <td>CSS</td>
+          <td>Intermedio</td>
+        </tr>
+        <tr>
+          <td>Phyton</td>
+          <td>Intermedio</td>
+        </tr>
+        <tr>
+          <td>C</td>
+          <td>Intermedio</td>
+        </tr>
+        <tr>
+          <td>Pascal</td>
+          <td>Avanzado</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  </section>
+<section class="container my-5">
+    <div class="row justify-content-center g-4">
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card border-0 shadow-sm h-100 skill-card">
+          <div class="card-body">
+            <h5>🖥️</h5>
+            <p>Conocimientos de informática – manejo de entornos digitales.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card border-0 shadow-sm h-100 skill-card">
+          <div class="card-body">
+            <h5>🎨</h5>
+            <p>Diseño digital – wireframes, prototipado web y diseño gráfico.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card border-0 shadow-sm h-100 skill-card">
+          <div class="card-body">
+            <h5>💡</h5>
+            <p>Creatividad y pensamiento crítico.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card border-0 shadow-sm h-100 skill-card">
+          <div class="card-body">
+            <h5>👥</h5>
+            <p>Trabajo en equipo.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card border-0 shadow-sm h-100 skill-card">
+          <div class="card-body">
+            <h5>⏱️</h5>
+            <p>Organización y gestión del tiempo.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card border-0 shadow-sm h-100 skill-card">
+          <div class="card-body">
+            <h5>🌍</h5>
+            <p>Inglés avanzado – comprensión y comunicación fluida en contextos técnicos.</p>
+          </div>
+        </div>
+      </div>
+</section>
+   <!-- Lo que me gusta -->
+    <h3 class="subtitulo">💫 Lo que me gusta 💫</h3>
+    <p class="texto">
+      Me encanta aprender cosas nuevas, experimentar con el diseño, resolver problemas con código 
+      y aportar valor a proyectos que generen impacto positivo.
+      También disfruto del deporte, la música y de mantener un equilibrio entre lo personal y lo profesional.
+    </p>
+   <div class="text-center mt-4">
+    <a href="./proyectos.html" class="btn btn-custom">👉 Conocé mis proyectos</a>
+   </div>
+   </main>
+    <!-- Footer  -->
+   <footer class="text-center text-lg-start bg-dark text-white mt-5">
+   <div class="container p-4 pb-0">
+    <div class="row">
+      <!-- Columna 1 -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-uppercase fw-bold mb-3">Contacto</h5>
+        <p><i class="bi bi-envelope me-2"></i> llullselene@gmail.com</p>
+        <p><i class="bi bi-telephone me-2"></i> 3482-524017</p>
+      </div>
+      <!-- Columna 2 -->
+      <div class="col-md-4 mb-4 text-center">
+        <h5 class="text-uppercase fw-bold mb-3">Redes</h5>
+        <a href="https://instagram.com/selellull" class="text-white me-3 fs-4"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/selene-llull-1815a729b/" class="text-white fs-4"><i class="bi bi-linkedin"></i></a>
+      </div>
+      <!-- Columna 3 -->
+      <div class="col-md-4 mb-4 text-end">
+        <h5 class="text-uppercase fw-bold mb-3">© 2025</h5>
+        <p>Se reservan los datos de autor<br>Selene Llull</p>
+      </div>
+    </div>
+   </div>
+   <div class="text-center p-3 border-top border-secondary">
+    <small>Desarrollado con <3 por Selene Llull</small>
+   </div>
+   </footer>
     <!-- Script JS de Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+ </body>
 </html>
