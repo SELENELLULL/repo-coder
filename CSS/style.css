@@ -1,3 +1,4 @@
+/*ESTILOS GENERALES*/
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +9,11 @@ html, body {
   height: 100%;      
   margin: 0;
 }
+body {
+  background-color: #fbe9e7;
+  font-family: 'Poppins', sans-serif;
+}
+/*HEADER*/
 header {
   background-color: #EDAFB8; 
   text-align: center;
@@ -28,6 +34,7 @@ header h1 img {
  display: block;
   margin: 5px 0;
 }
+/*NAVBAR*/
 nav ul {
   list-style: none;
 }
@@ -41,24 +48,23 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: #4A5759;
-  transition: color 0.3s ease; /* Animación al cambiar color */
-  font-weight: normal; /* 👈 hace la fuente más fina */
+  transition: color 0.3s ease; 
+  font-weight: normal; 
   font-size: 18px;
 }
 nav ul li a:hover {
   color: #B0C4B1; 
 }
-.navbar .nav-link {
-  font-weight: 400; /* todos finitos */
-}
+.navbar .nav-link,
 .navbar .nav-link.active {
-  font-weight: 400; /* el activo un poquito más grueso pero no bold */
+  font-weight: 400;
 }
+/*MAIN Y SECCIONES GENERALES*/
 main {
- max-width: 1000px;
- margin: 20px auto;
- padding: 0 20px;
- flex: 1;  
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 20px;
+  flex: 1;
 }
 .banner {
   width: 100vw;
@@ -68,8 +74,8 @@ main {
   margin-left: -50vw;
   margin-right: -50vw;
 }
-.texto{
- text-align: center;
+.texto {
+  text-align: center;
   margin-bottom: 5px;
   color: black;
   padding: 0 20px;
@@ -82,15 +88,16 @@ ul li {
   font-size: 18px;         
   font-weight: bold;       
   line-height: 1.6;        
-  color:#4A5759;
+  color: #4A5759;
 }
-.subtitulo{
+.subtitulo {
   text-align: center;
-  font-size: 22px;         
-  font-weight: bold;       
-  line-height: 1.6;        
-  color:#4A5759;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.6;
+  color: #4A5759;
 }
+/*SECCION EDUCACION*/
 .miedu{
   display:flex; 
   padding: 10px;
@@ -105,6 +112,7 @@ ul li {
   margin: 30px;
   border-radius: 10px;
 }
+/*SECCIONES VARIAS*/
 .caja1{
   width: 80%;
   background-color:#EDAFB8; 
@@ -113,20 +121,6 @@ ul li {
   line-height: 50px;
   margin: 30px;
   border-radius: 10px;
-}
-
-.texto{
- text-align: center;
-  margin-bottom: 5px;
-  color: black;
-  padding: 0 20px;
-}
-.proyectosPadre{
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: repeat(4,1fr);
-  width: 100%;
-  gap: 20px;
 }
 .caja3 {
   background-color: transparent; 
@@ -147,22 +141,25 @@ ul li {
   margin: 5vh;
   border-radius: 0.05vhpx;
 }
-footer {
-  background-color: #4A5759; 
-  color: #fff;
-  text-align: center;
-  padding: 2vh;
-  margin: 0%;
-  font-size: 2vh;     
+.proyectosPadre{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(4,1fr);
   width: 100%;
+  gap: 20px;
 }
-.btn-custom {
-  background-color: #4A5759; 
-  border: none;
-  color: #fff;
+.icono-proyecto {
+  font-size: 2.5rem;
+  color: #4A5759;
 }
-.btn-custom:hover {
-  background-color: #4A5759;
+/*CARDS Y BOTONES*/
+.card {
+  background-color: #EDAFB8;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
 }
 .card-custom{
   background-color: #EDAFB8; /* color de fondo de la card */
@@ -175,6 +172,19 @@ footer {
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
+.card-custom .btn {
+  border-color: #4A5759;
+  color:#fff ;
+}
+.btn-custom {
+  background-color: #4A5759; 
+  border: none;
+  color: #fff;
+}
+.btn-custom:hover {
+  background-color: #4A5759;
+}
+/*HABILIDADES*/
 .habilidades-oval {
   padding: 50px 20px;
   text-align: center;
@@ -201,45 +211,26 @@ footer {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   min-width: 150px;
 }
-.icon {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
 .oval-card:hover{
   transform: scale(1.1);
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+.icon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 .oval-card p {
   font-size: 0.9rem;
   color: #555;
   text-align: center;
 }
-body {
-  background-color: #fbe9e7;
-  font-family: 'Poppins', sans-serif;
-}
-.card {
-  background-color: #EDAFB8;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-}
+/*TABLAS*/
 .table{
   text-align: center;
   width: 50%;
   margin: 0 auto;
 }
-.icono-proyecto {
-  font-size: 2.5rem;
-  color: #4A5759;
-}
-.card-custom .btn {
-  border-color: #4A5759;
-  color:#fff ;
-}
-/* ==== SECCIÓN DE CONTACTO ==== */
+/*SECCIÓN DE CONTACTO */
 .contacto-lista {
   border: none;
   padding: 0;
@@ -255,29 +246,22 @@ body {
   border: none;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
-
 .contacto-lista li:hover {
   background-color: #EDAFB8;
   transform: scale(1.02);
   border-radius: 10px;
 }
-
 .icono-contacto {
   font-size: 1.5rem;
   color: #4A5759;
   transition: color 0.3s ease;
 }
-
 .contacto-lista a {
   color: #4A5759;
   text-decoration: none;
   font-weight: 600;
 }
-
-.contacto-lista a:hover {
-  color: #B0C4B1;
-}
-
+.contacto-lista a:hover,
 .icono-contacto:hover {
   color: #B0C4B1;
 }
@@ -299,6 +283,107 @@ body {
   background-color: #4A5759;
   color: #fff;
   transition: background-color 0.3s ease;
+}
+/*FOOTER*/
+footer {
+  background-color: #4A5759; 
+  color: #fff;
+  text-align: center;
+  padding: 2vh;
+  margin: 0%;
+  font-size: 2vh;     
+  width: 100%;
+}
+/* ==== MEDIA QUERIES PARA CELULARES ==== */
+@media (max-width: 768px) {
+
+  /* Encabezado */
+  header {
+    padding: 15px 0;
+  }
+
+  header h1 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  /* Navbar */
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .nav-link {
+    font-size: 16px;
+  }
+
+  /* Texto introductorio */
+  .subtitulo {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .texto {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  /* Contenedor de educación */
+  .miedu {
+    flex-direction: column;
+    padding: 5px;
+  }
+
+  .caja5 {
+    width: 90%;
+    margin: 15px auto;
+    padding: 15px;
+  }
+
+  .caja5 h3 {
+    font-size: 18px;
+  }
+
+  .caja5 p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  /* Footer */
+  footer {
+    font-size: 14px;
+    text-align: center;
+    padding: 20px 10px;
+  }
+
+  footer .col-md-4 {
+    text-align: center !important;
+    margin-bottom: 20px;
+  }
+
+  footer h5 {
+    font-size: 16px;
+  }
+
+  footer p, footer small {
+    font-size: 14px;
+  }
+
+  /* Íconos de redes */
+  .bi {
+    font-size: 1.4rem !important;
+  }
+
+  /* Contenedor general */
+  main {
+    margin: 10px auto;
+    padding: 0 10px;
+  }
 }
 
 
