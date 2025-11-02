@@ -352,11 +352,6 @@ footer {
     padding: 0 10px;
     margin: 10px auto;
   }
-  .banner {
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%;
-  }
   .texto {
     font-size: 14px;
     padding: 0 10px;
@@ -417,4 +412,6 @@ footer {
   margin: 0%;
   font-size: 2vh;
   width: 100%;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
