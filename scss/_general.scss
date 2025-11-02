@@ -1,0 +1,321 @@
+/*ESTILOS GENERALES*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $fuente-secundaria;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+body {
+  background-color: $color-fondo;
+  font-family: $fuente-primaria;
+}
+/*MAIN Y SECCIONES GENERALES*/
+main {
+  max-width: $max-ancho;
+  margin: 20px auto;
+  padding: 0 20px;
+  flex: 1;
+}
+.banner {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+.texto {
+  text-align: center;
+  margin-bottom: 5px;
+  color: black;
+  padding: 0 20px;
+}
+ul {
+  margin: 15px 0 15px 20px;
+}
+ul li {
+  margin: 8px 0;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.6;
+  color: $color-secundario;
+}
+.subtitulo {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.6;
+  color: $color-secundario;
+}
+/*SECCION EDUCACION*/
+.miedu {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: center;
+}
+.caja1 {
+  width: 100%;
+  background-color: $color-principal;
+  border: solid 1px #fff;
+  text-align: center;
+  margin: 30px;
+  border-radius: 10px;
+}
+/*SECCIONES VARIAS*/
+.caja2 {
+  background-color: transparent;
+  border-radius: 15px;
+  padding: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+.icono-proyecto {
+  font-size: 2.5rem;
+  color: $color-secundario;
+}
+/*CARDS Y BOTONES*/
+.card { 
+    background-color: $color-principal; 
+    transition: transform 0.3s ease, 
+    box-shadow 0.3s ease; 
+} 
+.card:hover { 
+ transform: translateY(-5px);
+ box-shadow: 0 8px 16px rgba(0,0,0,0.1); 
+} 
+.card-custom { 
+ background-color: $color-principal; 
+ width: 14rem; border-radius: 20px;
+ transition: transform 0.3s ease, box-shadow 0.3s ease; 
+} 
+.card-custom:hover { 
+ background-color: $color-blanco; /* color al pasar el mouse */
+ transform: translateY(-5px); 
+ box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); 
+}
+.card-custom .btn {
+  border-color: $color-secundario;
+  color: $color-blanco;
+}
+.btn-custom {
+  background-color: $color-secundario;
+  border: none;
+  color: $color-blanco;
+}
+.btn-custom:hover {
+  background-color: $color-secundario;
+}
+/*HABILIDADES*/
+.habilidades-oval {
+  padding: 50px 20px;
+  text-align: center;
+}
+.habilidades-oval h3 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: $color-secundario;
+}
+.oval-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.oval-card {
+  background: $color-principal;
+  border-radius: 50px / 30px; /* ovalado */
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  min-width: 150px;
+}
+.oval-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+.icon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.oval-card p {
+  font-size: 0.9rem;
+  color: #555;
+  text-align: center;
+}
+/*TABLAS*/
+.table {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+/*SECCIÓN DE CONTACTO */
+.contacto-lista {
+  border: none;
+  padding: 0;
+}
+.contacto-lista li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 18px;
+  color: $color-secundario;
+  font-weight: 500;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.contacto-lista li:hover {
+  background-color: $color-principal;
+  transform: scale(1.02);
+  border-radius: 10px;
+}
+.icono-contacto {
+  font-size: 1.5rem;
+  color: $color-secundario;
+  transition: color 0.3s ease;
+}
+.contacto-lista a {
+  color: $color-secundario;
+  text-decoration: none;
+  font-weight: 600;
+}
+.contacto-lista a:hover,
+.icono-contacto:hover {
+  color: $color-hover;
+}
+#contacto .form-control {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 10px 12px;
+  font-size: 16px;
+}
+#contacto .form-control:focus {
+  border-color: $color-secundario;
+  box-shadow: 0 0 8px rgba(74, 87, 89, 0.3);
+}
+#contacto .card {
+  background-color: $color-principal;
+  border-radius: 15px;
+}
+#contacto .btn-custom {
+  background-color: $color-secundario;
+  color: $color-blanco;
+  transition: background-color 0.3s ease;
+}
+/*FOOTER*/
+footer {
+  background-color: $color-secundario;
+  color: $color-blanco;
+  text-align: center;
+  padding: 2vh;
+  margin: 0%;
+  font-size: 2vh;
+  width: 100%;
+}
+/* MEDIA QUERIES PARA CELULARES */
+@media (max-width: 768px) {
+  header {
+    padding: 15px 10px;
+    h1 {
+      img {
+        width: 120px;
+      }
+    }
+  }
+  nav {
+    ul {
+      li {
+        display: block;
+        margin: 8px 0;
+        text-align: center;
+        a {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  main {
+    padding: 0 10px;
+    margin: 10px auto;
+  }
+  .banner {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+  .texto {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+  ul {
+    li {
+      font-size: 16px;
+    }
+  }
+  .subtitulo {
+    font-size: 20px;
+  }
+  .caja1 {
+    margin: 15px;
+  }
+  .caja2 {
+    padding: 20px;
+  }
+  .card-custom {
+    width: 90%;
+    margin: 10px auto;
+  }
+  .habilidades-oval {
+    padding: 30px 10px;
+    .oval-container {
+      flex-direction: column;
+      gap: 15px;
+
+      .oval-card {
+        min-width: 80%;
+        padding: 15px 20px;
+
+        p {
+          font-size: 0.85rem;
+        }
+      }
+    }
+  }
+  .table {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  #contacto {
+    .form-control {
+      font-size: 14px;
+      padding: 8px 10px;
+    }
+
+    .contacto-lista {
+      li {
+        font-size: 16px;
+        flex-direction: column;
+        gap: 5px;
+      }
+    }
+  }
+
+  footer {
+    font-size: 1.8vh;
+    padding: 3vh 0;
+  }
+}
+

@@ -1,0 +1,44 @@
+/*HEADER*/
+header {
+  background-color: $color-principal;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  @include centrar-flex(column);
+  justify-content: center;
+}
+header h1 {
+  margin: 0;
+  padding: 0;
+}
+header h1 img {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin: 5px 0;
+}
+/*NAVBAR*/
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  display: inline-table;
+  margin: 0 12px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: $color-secundario;
+}
+nav ul li a {
+  text-decoration: none;
+  color: $color-secundario;
+  transition: color 0.3s ease;
+  font-weight: normal;
+  font-size: 18px;
+}
+nav ul li a:hover {
+  color: $color-hover;
+}
+.navbar .nav-link,
+.navbar .nav-link.active {
+  font-weight: 400;
+}

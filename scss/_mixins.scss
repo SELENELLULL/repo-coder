@@ -1,0 +1,9 @@
+@mixin centrar-flex($direccion: row) {
+  display: flex;
+  flex-direction: $direccion;
+  justify-content: center;
+  align-items: center;
+}
+@mixin sombra-suave {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
