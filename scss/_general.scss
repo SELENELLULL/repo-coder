@@ -12,8 +12,21 @@ html, body {
 body {
   background-color: $color-fondo;
   font-family: $fuente-primaria;
+ header { 
+    background-color: #f0a5b4; 
+    padding: 20px 0; 
+    text-align: left;
+    width: 100%; 
+    h1 { 
+      font-family: 'Great Vibes', cursive; 
+      font-size: 50px; 
+      color: #000000; 
+      font-weight:normal; 
+      margin: 0; 
+      text-align: center;
+    }
 }
-/*MAIN Y SECCIONES GENERALES*/
+}
 main {
   max-width: $max-ancho;
   margin: 20px auto;
